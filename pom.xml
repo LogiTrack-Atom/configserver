@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.logitrack-atom</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>configserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>configserver</name>
+	<description>Servidor de configuración centralizada de LogiTrack Atom.</description>
 	<url/>
 	<licenses>
 		<license/>

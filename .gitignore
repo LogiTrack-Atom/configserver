@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Configuración privada y material criptográfico
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.jks
