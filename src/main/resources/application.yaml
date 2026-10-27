@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_GIT_URI:https://github.com/LogiTrack-Atom/configserver-ms}
+          default-label: develop
+          clone-on-start: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
