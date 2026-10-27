@@ -1,0 +1,13 @@
+.git
+.github
+target
+src/test
+.env
+.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.jks
+.idea
+.vscode
+README.md
