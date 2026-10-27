@@ -20,3 +20,4 @@ Repositorio preparado para iniciar el Sprint 02. La implementación y sus verifi
 - Enlazar las tareas relacionadas cuando haya dependencias entre repositorios.
 
 El Docker Compose general y la documentación de integración se mantienen en [shipment-service](https://github.com/LogiTrack-Atom/shipment-service).
+Ejecución independiente con Docker
