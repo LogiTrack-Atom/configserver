@@ -1,0 +1,28 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        accept-empty: false
+        health:
+          repositories:
+            shipment:
+              name: shipment-service
+              profiles: dev
+              label: ${CONFIG_GIT_DEFAULT_LABEL:develop}
+        git:
+          uri: ${CONFIG_GIT_URI:https://github.com/LogiTrack-Atom/configserver-ms.git}
+          default-label: ${CONFIG_GIT_DEFAULT_LABEL:develop}
+          clone-on-start: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
